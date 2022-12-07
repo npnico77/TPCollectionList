@@ -34,6 +34,10 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.textBoxInserer = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -96,11 +100,52 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.buttonMoyenneLinq_Click);
             // 
+            // textBoxInserer
+            // 
+            this.textBoxInserer.Location = new System.Drawing.Point(356, 58);
+            this.textBoxInserer.Name = "textBoxInserer";
+            this.textBoxInserer.Size = new System.Drawing.Size(125, 27);
+            this.textBoxInserer.TabIndex = 6;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(496, 56);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(168, 29);
+            this.button7.TabIndex = 7;
+            this.button7.Text = "Inserer au début";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.buttonInsererDebut_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(356, 129);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(201, 29);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "Supprimer indice 3";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.buttonSupprimerIndice3_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(360, 193);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(197, 29);
+            this.button9.TabIndex = 9;
+            this.button9.Text = "Verifier si 3 et 7 présents";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.textBoxInserer);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -110,6 +155,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -121,5 +167,9 @@
         private Button button4;
         private Button button5;
         private Button button6;
+        private TextBox textBoxInserer;
+        private Button button7;
+        private Button button8;
+        private Button button9;
     }
 }
