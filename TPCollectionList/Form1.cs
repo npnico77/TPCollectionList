@@ -54,7 +54,6 @@ namespace TPCollectionList
             //LINQ
             maListe.ForEach(elt =>  moyenne += elt);
             moyenne = moyenne / maListe.Count;
-            MessageBox.Show("la moyenne est de " + moyenne);
         }
     }
 }
